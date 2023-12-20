@@ -1,3 +1,12 @@
+function makeArray(firstArray, secondArray, maxLength) {
+  let ollArray = firstArray.concat(secondArray);
+  if (ollArray.length >= maxLength) {
+    return ollArray.slice(0, maxLength);
+  } else {
+    return ollArray;
+  }
+}
+
 // Напиши функцію під назвою makeArray, яка приймає три параметри:
 //  firstArray (масив), secondArray (масив) і maxLength (число).
 // Функція повинна створювати новий масив, який містить усі елементи з firstArray,
